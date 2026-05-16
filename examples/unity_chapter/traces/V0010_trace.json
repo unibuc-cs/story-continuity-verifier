@@ -1,0 +1,141 @@
+{
+  "initial_state": "M1_Intro",
+  "initial_assets": [],
+  "actions": [
+    {
+      "index": 0,
+      "transition_id": "t_intro_city",
+      "action_type": "enter_hub",
+      "from": "M1_Intro",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete"
+      ]
+    },
+    {
+      "index": 1,
+      "transition_id": "t_city_side_sniper",
+      "action_type": "complete_quest",
+      "from": "CityHub",
+      "to": "Q_SideSniper",
+      "params": {
+        "quest": "Q_SideSniper"
+      },
+      "parameters": [
+        {
+          "key": "quest",
+          "value": "Q_SideSniper"
+        }
+      ],
+      "expected_state": "Q_SideSniper",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle"
+      ]
+    },
+    {
+      "index": 2,
+      "transition_id": "t_side_sniper_city",
+      "action_type": "enter_hub",
+      "from": "Q_SideSniper",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle"
+      ]
+    },
+    {
+      "index": 3,
+      "transition_id": "t_city_gate_setup",
+      "action_type": "complete_mission",
+      "from": "CityHub",
+      "to": "M2_GateSetup",
+      "params": {
+        "mission": "M2_GateSetup"
+      },
+      "parameters": [
+        {
+          "key": "mission",
+          "value": "M2_GateSetup"
+        }
+      ],
+      "expected_state": "M2_GateSetup",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle",
+        "StoryObjectiveFlag"
+      ]
+    },
+    {
+      "index": 4,
+      "transition_id": "t_gate_setup_city",
+      "action_type": "enter_hub",
+      "from": "M2_GateSetup",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle",
+        "StoryObjectiveFlag"
+      ]
+    },
+    {
+      "index": 5,
+      "transition_id": "t_city_long_recovery_1",
+      "action_type": "enter_mission",
+      "from": "CityHub",
+      "to": "LongRecovery_1",
+      "params": {
+        "mission": "LongRecovery_1"
+      },
+      "parameters": [
+        {
+          "key": "mission",
+          "value": "LongRecovery_1"
+        }
+      ],
+      "expected_state": "LongRecovery_1",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle",
+        "StoryObjectiveFlag"
+      ]
+    }
+  ],
+  "violation_id": "V0010",
+  "violation_class": "soft_lock"
+}

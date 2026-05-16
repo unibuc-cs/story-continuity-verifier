@@ -1,0 +1,170 @@
+*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2025, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- specification AG (state = M7_Boss -> has_SniperRifle)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    state = M1_Intro
+    action = act_t_intro_city
+    has_EscapeStarted = FALSE
+    has_FinaleUnlocked = FALSE
+    has_GateOpened = FALSE
+    has_HeistComplete = FALSE
+    has_IntroComplete = FALSE
+    has_SniperQuestDone = FALSE
+    has_SniperRifle = FALSE
+    has_SniperSold = FALSE
+    has_StoryObjectiveFlag = FALSE
+    has_WantedLevelBelow4 = FALSE
+    has_WantedLevelGE4 = FALSE
+    completed_M8_Ending = FALSE
+    atState_LongRecovery_5 = FALSE
+    atState_LongRecovery_4 = FALSE
+    atState_LongRecovery_3 = FALSE
+    atState_LongRecovery_2 = FALSE
+    atState_LongRecovery_1 = FALSE
+    atState_DeadEndDock = FALSE
+    atState_M8_Ending = FALSE
+    atState_M7_Boss = FALSE
+    atState_M6_Rooftop = FALSE
+    atState_M5_BlackMarket = FALSE
+    atState_M3_Escape = FALSE
+    atState_M3_BankHeist = FALSE
+    atState_M2_GateSetup = FALSE
+    atState_Q_SideSniper = FALSE
+    atState_CityHub = FALSE
+    atState_M1_Intro = TRUE
+  -> State: 1.2 <-
+    state = CityHub
+    action = act_t_city_gate_setup
+    has_IntroComplete = TRUE
+    atState_CityHub = TRUE
+    atState_M1_Intro = FALSE
+  -> State: 1.3 <-
+    state = M2_GateSetup
+    action = act_t_gate_setup_city
+    has_StoryObjectiveFlag = TRUE
+    atState_M2_GateSetup = TRUE
+    atState_CityHub = FALSE
+  -> State: 1.4 <-
+    state = CityHub
+    action = act_t_city_dev_shortcut
+    atState_M2_GateSetup = FALSE
+    atState_CityHub = TRUE
+  -> State: 1.5 <-
+    state = M7_Boss
+    action = act_t_boss_ending
+    has_FinaleUnlocked = TRUE
+    atState_M7_Boss = TRUE
+    atState_CityHub = FALSE
+-- specification AG (state = M8_Ending -> (has_WantedLevelBelow4 | !has_WantedLevelGE4))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 2.1 <-
+    state = M1_Intro
+    action = act_t_intro_city
+    has_EscapeStarted = FALSE
+    has_FinaleUnlocked = FALSE
+    has_GateOpened = FALSE
+    has_HeistComplete = FALSE
+    has_IntroComplete = FALSE
+    has_SniperQuestDone = FALSE
+    has_SniperRifle = FALSE
+    has_SniperSold = FALSE
+    has_StoryObjectiveFlag = FALSE
+    has_WantedLevelBelow4 = FALSE
+    has_WantedLevelGE4 = FALSE
+    completed_M8_Ending = FALSE
+    atState_LongRecovery_5 = FALSE
+    atState_LongRecovery_4 = FALSE
+    atState_LongRecovery_3 = FALSE
+    atState_LongRecovery_2 = FALSE
+    atState_LongRecovery_1 = FALSE
+    atState_DeadEndDock = FALSE
+    atState_M8_Ending = FALSE
+    atState_M7_Boss = FALSE
+    atState_M6_Rooftop = FALSE
+    atState_M5_BlackMarket = FALSE
+    atState_M3_Escape = FALSE
+    atState_M3_BankHeist = FALSE
+    atState_M2_GateSetup = FALSE
+    atState_Q_SideSniper = FALSE
+    atState_CityHub = FALSE
+    atState_M1_Intro = TRUE
+  -> State: 2.2 <-
+    state = CityHub
+    action = act_t_city_side_sniper
+    has_IntroComplete = TRUE
+    atState_CityHub = TRUE
+    atState_M1_Intro = FALSE
+  -> State: 2.3 <-
+    state = Q_SideSniper
+    action = act_t_side_sniper_city
+    has_SniperQuestDone = TRUE
+    has_SniperRifle = TRUE
+    atState_Q_SideSniper = TRUE
+    atState_CityHub = FALSE
+  -> State: 2.4 <-
+    state = CityHub
+    action = act_t_city_gate_setup
+    atState_Q_SideSniper = FALSE
+    atState_CityHub = TRUE
+  -> State: 2.5 <-
+    state = M2_GateSetup
+    action = act_t_gate_setup_city
+    has_StoryObjectiveFlag = TRUE
+    atState_M2_GateSetup = TRUE
+    atState_CityHub = FALSE
+  -> State: 2.6 <-
+    state = CityHub
+    action = act_t_city_heist
+    atState_M2_GateSetup = FALSE
+    atState_CityHub = TRUE
+  -> State: 2.7 <-
+    state = M3_BankHeist
+    action = act_t_heist_escape
+    has_HeistComplete = TRUE
+    atState_M3_BankHeist = TRUE
+    atState_CityHub = FALSE
+  -> State: 2.8 <-
+    state = M3_Escape
+    action = act_t_escape_rooftop
+    has_EscapeStarted = TRUE
+    has_WantedLevelGE4 = TRUE
+    atState_M3_Escape = TRUE
+    atState_M3_BankHeist = FALSE
+  -> State: 2.9 <-
+    state = M6_Rooftop
+    action = act_t_rooftop_boss
+    has_GateOpened = TRUE
+    atState_M6_Rooftop = TRUE
+    atState_M3_Escape = FALSE
+  -> State: 2.10 <-
+    state = M7_Boss
+    action = act_t_boss_ending
+    has_FinaleUnlocked = TRUE
+    atState_M7_Boss = TRUE
+    atState_M6_Rooftop = FALSE
+  -> State: 2.11 <-
+    state = M8_Ending
+    action = idle
+    completed_M8_Ending = TRUE
+    atState_M8_Ending = TRUE
+    atState_M7_Boss = FALSE
+-- specification AG (state = M3_BankHeist -> AX state = M3_Escape)  is true

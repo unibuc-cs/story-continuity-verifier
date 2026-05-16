@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Transition_t_heist_escape
+  m_EditorClassIdentifier: StoryFeasibility.Runtime:StoryFeasibility:StoryTransitionDef
+  id: t_heist_escape
+  from: {fileID: 11400000, guid: 08a365f495fbfc54c83471d6266a837b, type: 2}
+  to: {fileID: 11400000, guid: 599bb2fcd128f4b4c83d6c0174b20c38, type: 2}
+  preconditions: []
+  effects:
+  - AddFlag("EscapeStarted")
+  - AddFlag("WantedLevelGE4")
+  actionType: complete_mission
+  parameters:
+  - key: mission
+    value: M3_Escape
+  cost: 1

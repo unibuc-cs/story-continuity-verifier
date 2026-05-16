@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.idea/
+
+unity-demo/Library/
+unity-demo/Temp/
+unity-demo/UserSettings/
+unity-demo/Obj/
+unity-demo/Build/
+unity-demo/Builds/
+unity-demo/Logs/Packages-Update.log
+unity-demo/Logs/shadercompiler-*.log
+
+# Local third-party tool installation; see tools/README.md.
+tools/NuSMV/

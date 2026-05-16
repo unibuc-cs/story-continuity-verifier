@@ -1,0 +1,21 @@
+id,class,severity,rule,state,missing_assets,root_cause_key,duplicate_of,trace_length,message
+V0001,hard_lock,error,,DeadEndDock,,hard_lock|DeadEndDock,,2,Completion is no longer reachable from this configuration.
+V0002,hard_lock,error,,DeadEndDock,,hard_lock|DeadEndDock,V0001,4,Completion is no longer reachable from this configuration.
+V0003,hard_lock,error,,DeadEndDock,,hard_lock|DeadEndDock,V0001,6,Completion is no longer reachable from this configuration.
+V0004,hard_lock,error,,DeadEndDock,,hard_lock|DeadEndDock,V0001,6,Completion is no longer reachable from this configuration.
+V0005,hard_lock,error,,M3_BankHeist,,hard_lock|M3_BankHeist,,8,Completion is no longer reachable from this configuration.
+V0006,hard_lock,error,,M3_BankHeist,,hard_lock|M3_BankHeist,V0005,4,Completion is no longer reachable from this configuration.
+V0007,hard_lock,error,,M3_Escape,,hard_lock|M3_Escape,,9,Completion is no longer reachable from this configuration.
+V0008,hard_lock,error,,M6_Rooftop,,hard_lock|M6_Rooftop,,10,Completion is no longer reachable from this configuration.
+V0009,soft_lock,warning,,LongRecovery_2,,soft_lock|LongRecovery_2,,7,"Shortest recovery path to completion is 6 transitions, above theta=5."
+V0010,soft_lock,warning,,LongRecovery_1,,soft_lock|LongRecovery_1,,6,"Shortest recovery path to completion is 7 transitions, above theta=5."
+V0011,soft_lock,warning,,LongRecovery_1,,soft_lock|LongRecovery_1,V0010,8,"Shortest recovery path to completion is 7 transitions, above theta=5."
+V0012,disposable_critical_resource,error,,M5_BlackMarket,SniperRifle,critical_loss|SniperRifle|t_city_black_market,,4,Transition 't_city_black_market' irreversibly removes critical asset 'SniperRifle' while a mandatory state still requires it.
+V0013,disposable_critical_resource,error,,M5_BlackMarket,SniperRifle,critical_loss|SniperRifle|t_city_black_market,V0012,6,Transition 't_city_black_market' irreversibly removes critical asset 'SniperRifle' while a mandatory state still requires it.
+V0014,shortcut,error,,M7_Boss,SniperRifle,shortcut|M7_Boss|SniperRifle,,8,Mandatory state 'M7_Boss' is reachable without required assets: SniperRifle.
+V0015,shortcut,error,,M7_Boss,SniperRifle,shortcut|M7_Boss|SniperRifle,V0014,4,Mandatory state 'M7_Boss' is reachable without required assets: SniperRifle.
+V0016,recommended_asset_missing,info,,M7_Boss,GateOpened,recommended_asset_missing|M7_Boss|GateOpened,,6,Mandatory state 'M7_Boss' is reachable without recommended assets: GateOpened.
+V0017,recommended_asset_missing,info,,M7_Boss,GateOpened,recommended_asset_missing|M7_Boss|GateOpened,V0016,8,Mandatory state 'M7_Boss' is reachable without recommended assets: GateOpened.
+V0018,dsl_invariant,error,BossPrereqsMet,M7_Boss,SniperRifle,dsl_invariant|BossPrereqsMet|M7_Boss|SniperRifle,,8,Rule 'BossPrereqsMet' is violated at state 'M7_Boss'.
+V0019,dsl_invariant,error,BossPrereqsMet,M7_Boss,SniperRifle,dsl_invariant|BossPrereqsMet|M7_Boss|SniperRifle,V0018,4,Rule 'BossPrereqsMet' is violated at state 'M7_Boss'.
+V0020,dsl_invariant,error,NoFinalWhileHighlyWanted,M8_Ending,,dsl_invariant|NoFinalWhileHighlyWanted|M8_Ending|,,10,Rule 'NoFinalWhileHighlyWanted' is violated at state 'M8_Ending'.

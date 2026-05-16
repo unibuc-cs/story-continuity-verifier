@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "errors": 0,
+  "warnings": 0,
+  "issues": [],
+  "summary": {
+    "states": 16,
+    "assets": 10,
+    "quests": 5,
+    "transitions": 20
+  }
+}

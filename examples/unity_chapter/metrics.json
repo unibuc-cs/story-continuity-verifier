@@ -1,0 +1,258 @@
+{
+  "graph": "UnityPrototypeChapter",
+  "runs": {
+    "SR": {
+      "mode": "SR",
+      "ground_truth_total": 6,
+      "detected_total": 2,
+      "detection_rate": 0.3333333333333333,
+      "false_positives": 0,
+      "duplicates": 1,
+      "root_cause_duplicates": 0,
+      "advisories": 0,
+      "root_cause_count": 3,
+      "violation_count": 3,
+      "detection_by_class": {
+        "disposable_critical_resource": {
+          "detected": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        "dsl_invariant": {
+          "detected": 0,
+          "total": 2,
+          "rate": 0.0
+        },
+        "hard_lock": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        "shortcut": {
+          "detected": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        "soft_lock": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        }
+      },
+      "violations_by_class": {
+        "hard_lock": 1,
+        "soft_lock": 2
+      },
+      "matched_ground_truth": {
+        "GT_HARD_DEAD_END_DOCK": "V0001",
+        "GT_SOFT_LONG_RECOVERY": "V0002"
+      },
+      "unmatched_ground_truth": [
+        "GT_DISPOSABLE_SNIPER",
+        "GT_SHORTCUT_BOSS",
+        "GT_DSL_BOSS_PREREQ",
+        "GT_DSL_HIGH_WANTED_FINAL"
+      ],
+      "matched_violations": [
+        "V0001",
+        "V0002",
+        "V0003"
+      ]
+    },
+    "AQ": {
+      "mode": "AQ",
+      "ground_truth_total": 6,
+      "detected_total": 2,
+      "detection_rate": 0.3333333333333333,
+      "false_positives": 0,
+      "duplicates": 1,
+      "root_cause_duplicates": 0,
+      "advisories": 0,
+      "root_cause_count": 3,
+      "violation_count": 3,
+      "detection_by_class": {
+        "disposable_critical_resource": {
+          "detected": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        "dsl_invariant": {
+          "detected": 0,
+          "total": 2,
+          "rate": 0.0
+        },
+        "hard_lock": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        "shortcut": {
+          "detected": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        "soft_lock": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        }
+      },
+      "violations_by_class": {
+        "hard_lock": 1,
+        "soft_lock": 2
+      },
+      "matched_ground_truth": {
+        "GT_HARD_DEAD_END_DOCK": "V0001",
+        "GT_SOFT_LONG_RECOVERY": "V0002"
+      },
+      "unmatched_ground_truth": [
+        "GT_DISPOSABLE_SNIPER",
+        "GT_SHORTCUT_BOSS",
+        "GT_DSL_BOSS_PREREQ",
+        "GT_DSL_HIGH_WANTED_FINAL"
+      ],
+      "matched_violations": [
+        "V0001",
+        "V0002",
+        "V0003"
+      ]
+    },
+    "RA": {
+      "mode": "RA",
+      "ground_truth_total": 6,
+      "detected_total": 3,
+      "detection_rate": 0.5,
+      "false_positives": 4,
+      "duplicates": 6,
+      "root_cause_duplicates": 6,
+      "advisories": 0,
+      "root_cause_count": 7,
+      "violation_count": 13,
+      "detection_by_class": {
+        "disposable_critical_resource": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        "dsl_invariant": {
+          "detected": 0,
+          "total": 2,
+          "rate": 0.0
+        },
+        "hard_lock": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        "shortcut": {
+          "detected": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        "soft_lock": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        }
+      },
+      "violations_by_class": {
+        "hard_lock": 8,
+        "resource_loss": 2,
+        "soft_lock": 3
+      },
+      "matched_ground_truth": {
+        "GT_DISPOSABLE_SNIPER": "V0012",
+        "GT_HARD_DEAD_END_DOCK": "V0001",
+        "GT_SOFT_LONG_RECOVERY": "V0009"
+      },
+      "unmatched_ground_truth": [
+        "GT_SHORTCUT_BOSS",
+        "GT_DSL_BOSS_PREREQ",
+        "GT_DSL_HIGH_WANTED_FINAL"
+      ],
+      "matched_violations": [
+        "V0001",
+        "V0002",
+        "V0003",
+        "V0004",
+        "V0009",
+        "V0010",
+        "V0011",
+        "V0012",
+        "V0013"
+      ]
+    },
+    "SC": {
+      "mode": "SC",
+      "ground_truth_total": 6,
+      "detected_total": 6,
+      "detection_rate": 1.0,
+      "false_positives": 4,
+      "duplicates": 8,
+      "root_cause_duplicates": 9,
+      "advisories": 2,
+      "root_cause_count": 11,
+      "violation_count": 20,
+      "detection_by_class": {
+        "disposable_critical_resource": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        "dsl_invariant": {
+          "detected": 2,
+          "total": 2,
+          "rate": 1.0
+        },
+        "hard_lock": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        "shortcut": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        "soft_lock": {
+          "detected": 1,
+          "total": 1,
+          "rate": 1.0
+        }
+      },
+      "violations_by_class": {
+        "disposable_critical_resource": 2,
+        "dsl_invariant": 3,
+        "hard_lock": 8,
+        "recommended_asset_missing": 2,
+        "shortcut": 2,
+        "soft_lock": 3
+      },
+      "matched_ground_truth": {
+        "GT_DISPOSABLE_SNIPER": "V0012",
+        "GT_DSL_BOSS_PREREQ": "V0018",
+        "GT_DSL_HIGH_WANTED_FINAL": "V0020",
+        "GT_HARD_DEAD_END_DOCK": "V0001",
+        "GT_SHORTCUT_BOSS": "V0014",
+        "GT_SOFT_LONG_RECOVERY": "V0009"
+      },
+      "unmatched_ground_truth": [],
+      "matched_violations": [
+        "V0001",
+        "V0002",
+        "V0003",
+        "V0004",
+        "V0009",
+        "V0010",
+        "V0011",
+        "V0012",
+        "V0013",
+        "V0014",
+        "V0015",
+        "V0018",
+        "V0019",
+        "V0020"
+      ]
+    }
+  }
+}

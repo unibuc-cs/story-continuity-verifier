@@ -1,0 +1,232 @@
+{
+  "name": "UnityPrototypeChapter",
+  "states": [
+    { "id": "M1_Intro", "kind": "mission", "tags": ["main"] },
+    { "id": "CityHub", "kind": "hub", "tags": ["hub"] },
+    { "id": "Q_SideSniper", "kind": "side_quest", "tags": ["side"] },
+    { "id": "M2_GateSetup", "kind": "mission", "tags": ["main"] },
+    { "id": "M3_BankHeist", "kind": "mission", "tags": ["main"] },
+    { "id": "M3_Escape", "kind": "mission", "tags": ["main"] },
+    { "id": "M5_BlackMarket", "kind": "shop", "tags": ["optional"] },
+    { "id": "M6_Rooftop", "kind": "mission", "tags": ["main"] },
+    { "id": "M7_Boss", "kind": "mission", "tags": ["mandatory", "boss"] },
+    { "id": "M8_Ending", "kind": "ending", "tags": ["completion"] },
+    { "id": "DeadEndDock", "kind": "mission", "tags": ["seeded_hard_lock"] },
+    { "id": "LongRecovery_1", "kind": "mission", "tags": ["seeded_soft_lock"] },
+    { "id": "LongRecovery_2", "kind": "mission", "tags": ["seeded_soft_lock"] },
+    { "id": "LongRecovery_3", "kind": "mission", "tags": ["seeded_soft_lock"] },
+    { "id": "LongRecovery_4", "kind": "mission", "tags": ["seeded_soft_lock"] },
+    { "id": "LongRecovery_5", "kind": "mission", "tags": ["seeded_soft_lock"] }
+  ],
+  "assets": [
+    { "id": "IntroComplete", "category": "flag" },
+    { "id": "StoryObjectiveFlag", "category": "flag" },
+    { "id": "SniperRifle", "category": "unique", "support_quests": ["Q_SideSniper"] },
+    { "id": "SniperQuestDone", "category": "flag" },
+    { "id": "SniperSold", "category": "flag" },
+    { "id": "GateOpened", "category": "flag" },
+    { "id": "HeistComplete", "category": "flag" },
+    { "id": "EscapeStarted", "category": "flag" },
+    { "id": "FinaleUnlocked", "category": "flag" },
+    { "id": "WantedLevelGE4", "category": "flag" }
+  ],
+  "quests": [
+    { "id": "Q_SideSniper", "role": "side", "rewards": ["SniperRifle"], "pre": ["NotHasFlag(\"SniperQuestDone\")"] },
+    { "id": "Q_MainGateSetup", "role": "main", "rewards": ["StoryObjectiveFlag"] },
+    { "id": "Q_MainHeist", "role": "main", "rewards": ["HeistComplete"] },
+    { "id": "Q_MainEscape", "role": "main", "rewards": ["EscapeStarted"] },
+    { "id": "Q_MainFinale", "role": "main", "rewards": ["FinaleUnlocked"] }
+  ],
+  "mandatory_story_states": [
+    {
+      "state": "M7_Boss",
+      "required": ["SniperRifle"],
+      "recommended": ["GateOpened"]
+    }
+  ],
+  "transitions": [
+    {
+      "id": "t_intro_city",
+      "from": "M1_Intro",
+      "to": "CityHub",
+      "pre": [],
+      "eff": ["AddFlag(\"IntroComplete\")"],
+      "action_type": "enter_hub",
+      "params": { "state": "CityHub" }
+    },
+    {
+      "id": "t_city_side_sniper",
+      "from": "CityHub",
+      "to": "Q_SideSniper",
+      "pre": ["NotHasFlag(\"SniperQuestDone\")"],
+      "eff": ["AddAsset(\"SniperRifle\")", "AddFlag(\"SniperQuestDone\")"],
+      "action_type": "complete_quest",
+      "params": { "quest": "Q_SideSniper" }
+    },
+    {
+      "id": "t_side_sniper_city",
+      "from": "Q_SideSniper",
+      "to": "CityHub",
+      "pre": [],
+      "eff": [],
+      "action_type": "enter_hub",
+      "params": { "state": "CityHub" }
+    },
+    {
+      "id": "t_city_gate_setup",
+      "from": "CityHub",
+      "to": "M2_GateSetup",
+      "pre": [],
+      "eff": ["AddFlag(\"StoryObjectiveFlag\")"],
+      "action_type": "complete_mission",
+      "params": { "mission": "M2_GateSetup" }
+    },
+    {
+      "id": "t_gate_setup_city",
+      "from": "M2_GateSetup",
+      "to": "CityHub",
+      "pre": [],
+      "eff": [],
+      "action_type": "enter_hub",
+      "params": { "state": "CityHub" }
+    },
+    {
+      "id": "t_city_heist",
+      "from": "CityHub",
+      "to": "M3_BankHeist",
+      "pre": ["HasFlag(\"StoryObjectiveFlag\")"],
+      "eff": ["AddFlag(\"HeistComplete\")"],
+      "action_type": "complete_mission",
+      "params": { "mission": "M3_BankHeist" }
+    },
+    {
+      "id": "t_heist_escape",
+      "from": "M3_BankHeist",
+      "to": "M3_Escape",
+      "pre": [],
+      "eff": ["AddFlag(\"EscapeStarted\")", "AddFlag(\"WantedLevelGE4\")"],
+      "action_type": "complete_mission",
+      "params": { "mission": "M3_Escape" }
+    },
+    {
+      "id": "t_escape_rooftop",
+      "from": "M3_Escape",
+      "to": "M6_Rooftop",
+      "pre": ["HasFlag(\"EscapeStarted\")"],
+      "eff": ["AddFlag(\"GateOpened\")"],
+      "action_type": "enter_mission",
+      "params": { "mission": "M6_Rooftop" }
+    },
+    {
+      "id": "t_rooftop_boss",
+      "from": "M6_Rooftop",
+      "to": "M7_Boss",
+      "pre": ["HasAsset(\"SniperRifle\")"],
+      "eff": ["AddFlag(\"FinaleUnlocked\")"],
+      "action_type": "enter_mission",
+      "params": { "mission": "M7_Boss" }
+    },
+    {
+      "id": "t_boss_ending",
+      "from": "M7_Boss",
+      "to": "M8_Ending",
+      "pre": [],
+      "eff": [],
+      "action_type": "complete_mission",
+      "params": { "mission": "M7_Boss" }
+    },
+    {
+      "id": "t_city_black_market",
+      "from": "CityHub",
+      "to": "M5_BlackMarket",
+      "pre": ["HasAsset(\"SniperRifle\")"],
+      "eff": ["RemoveAsset(\"SniperRifle\")", "AddFlag(\"SniperSold\")"],
+      "action_type": "sell_asset",
+      "params": { "asset": "SniperRifle" }
+    },
+    {
+      "id": "t_black_market_city",
+      "from": "M5_BlackMarket",
+      "to": "CityHub",
+      "pre": [],
+      "eff": [],
+      "action_type": "enter_hub",
+      "params": { "state": "CityHub" }
+    },
+    {
+      "id": "t_city_dev_shortcut",
+      "from": "CityHub",
+      "to": "M7_Boss",
+      "pre": ["HasFlag(\"StoryObjectiveFlag\")"],
+      "eff": ["AddFlag(\"FinaleUnlocked\")"],
+      "action_type": "debug_enter_mission",
+      "params": { "mission": "M7_Boss" }
+    },
+    {
+      "id": "t_city_dead_end",
+      "from": "CityHub",
+      "to": "DeadEndDock",
+      "pre": [],
+      "eff": [],
+      "action_type": "enter_mission",
+      "params": { "mission": "DeadEndDock" }
+    },
+    {
+      "id": "t_city_long_recovery_1",
+      "from": "CityHub",
+      "to": "LongRecovery_1",
+      "pre": ["HasFlag(\"StoryObjectiveFlag\")"],
+      "eff": [],
+      "action_type": "enter_mission",
+      "params": { "mission": "LongRecovery_1" }
+    },
+    {
+      "id": "t_long_recovery_1_2",
+      "from": "LongRecovery_1",
+      "to": "LongRecovery_2",
+      "pre": [],
+      "eff": [],
+      "action_type": "complete_mission",
+      "params": { "mission": "LongRecovery_1" }
+    },
+    {
+      "id": "t_long_recovery_2_3",
+      "from": "LongRecovery_2",
+      "to": "LongRecovery_3",
+      "pre": [],
+      "eff": [],
+      "action_type": "complete_mission",
+      "params": { "mission": "LongRecovery_2" }
+    },
+    {
+      "id": "t_long_recovery_3_4",
+      "from": "LongRecovery_3",
+      "to": "LongRecovery_4",
+      "pre": [],
+      "eff": [],
+      "action_type": "complete_mission",
+      "params": { "mission": "LongRecovery_3" }
+    },
+    {
+      "id": "t_long_recovery_4_5",
+      "from": "LongRecovery_4",
+      "to": "LongRecovery_5",
+      "pre": [],
+      "eff": [],
+      "action_type": "complete_mission",
+      "params": { "mission": "LongRecovery_4" }
+    },
+    {
+      "id": "t_long_recovery_5_city",
+      "from": "LongRecovery_5",
+      "to": "CityHub",
+      "pre": [],
+      "eff": [],
+      "action_type": "enter_hub",
+      "params": { "state": "CityHub" }
+    }
+  ],
+  "initial_state": "M1_Intro",
+  "initial_assets": [],
+  "completion_states": ["M8_Ending"]
+}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Quest_Q_MainHeist
+  m_EditorClassIdentifier: StoryFeasibility.Runtime:StoryFeasibility:StoryQuestDef
+  id: Q_MainHeist
+  role: main
+  preconditions: []
+  rewards:
+  - {fileID: 11400000, guid: 3ea86604c099035438835e0bb88dfc86, type: 2}

@@ -1,0 +1,47 @@
+{
+  "name": "UnityPrototypeChapter seeded ground truth",
+  "defects": [
+    {
+      "id": "GT_HARD_DEAD_END_DOCK",
+      "class": "hard_lock",
+      "states": ["DeadEndDock"],
+      "description": "The dock branch has no route back to chapter completion."
+    },
+    {
+      "id": "GT_SOFT_LONG_RECOVERY",
+      "class": "soft_lock",
+      "states": ["CityHub", "LongRecovery_1", "LongRecovery_2", "LongRecovery_3", "LongRecovery_4", "LongRecovery_5"],
+      "description": "The long recovery branch exceeds the configured transition threshold."
+    },
+    {
+      "id": "GT_DISPOSABLE_SNIPER",
+      "class": "disposable_critical_resource",
+      "accepted_classes": ["disposable_critical_resource", "resource_loss"],
+      "states": ["M5_BlackMarket", "CityHub", "M3_BankHeist", "M3_Escape", "M6_Rooftop"],
+      "missing_assets": ["SniperRifle"],
+      "description": "The unique sniper rifle can be sold after its one-time acquisition route is exhausted."
+    },
+    {
+      "id": "GT_SHORTCUT_BOSS",
+      "class": "shortcut",
+      "states": ["M7_Boss"],
+      "missing_assets": ["SniperRifle"],
+      "description": "A debug shortcut reaches the boss without the required sniper rifle."
+    },
+    {
+      "id": "GT_DSL_BOSS_PREREQ",
+      "class": "dsl_invariant",
+      "rule": "BossPrereqsMet",
+      "states": ["M7_Boss"],
+      "missing_assets": ["SniperRifle"],
+      "description": "The boss prerequisite DSL rule catches the same missing required asset."
+    },
+    {
+      "id": "GT_DSL_HIGH_WANTED_FINAL",
+      "class": "dsl_invariant",
+      "rule": "NoFinalWhileHighlyWanted",
+      "states": ["M8_Ending"],
+      "description": "The finale can complete while the abstract wanted level is high."
+    }
+  ]
+}

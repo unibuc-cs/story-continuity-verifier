@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Transition_t_city_long_recovery_1
+  m_EditorClassIdentifier: StoryFeasibility.Runtime:StoryFeasibility:StoryTransitionDef
+  id: t_city_long_recovery_1
+  from: {fileID: 11400000, guid: 226ecfbf94d944b4b8f00db96468432e, type: 2}
+  to: {fileID: 11400000, guid: 64baae8d682f3454faa54528ad55b138, type: 2}
+  preconditions:
+  - HasFlag("StoryObjectiveFlag")
+  effects: []
+  actionType: enter_mission
+  parameters:
+  - key: mission
+    value: LongRecovery_1
+  cost: 1

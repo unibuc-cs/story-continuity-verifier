@@ -1,0 +1,48 @@
+{
+  "initial_state": "M1_Intro",
+  "initial_assets": [],
+  "actions": [
+    {
+      "index": 0,
+      "transition_id": "t_intro_city",
+      "action_type": "enter_hub",
+      "from": "M1_Intro",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete"
+      ]
+    },
+    {
+      "index": 1,
+      "transition_id": "t_city_dead_end",
+      "action_type": "enter_mission",
+      "from": "CityHub",
+      "to": "DeadEndDock",
+      "params": {
+        "mission": "DeadEndDock"
+      },
+      "parameters": [
+        {
+          "key": "mission",
+          "value": "DeadEndDock"
+        }
+      ],
+      "expected_state": "DeadEndDock",
+      "expected_assets": [
+        "IntroComplete"
+      ]
+    }
+  ],
+  "violation_id": "V0001",
+  "violation_class": "hard_lock"
+}

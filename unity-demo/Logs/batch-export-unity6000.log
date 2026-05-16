@@ -1,0 +1,635 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.9f1 (7a9955a4f2fa) revision 8034645'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) Professional' Language: 'en' Physical Memory: 64667 MB
+[Licensing::IpcConnector] Channel LicenseClient-cipri doesn't exist
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-05-16T08:40:52Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 43868)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-cipri" at "2026-05-16T08:40:53.1768081Z"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo
+-executeMethod
+StoryFeasibilityEditor.DemoChapterFactory.ExportDemoChapterForBatch
+-logFile
+C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Logs\batch-export-unity6000.log
+Successfully changed project path to: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo
+C:/Users/cipri/OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science/WORK_PROGRESS/GameTesting/StoryFeasability/unity-demo
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [32656]  Target information:
+
+Player connection [32656]  * "[IP] 10.60.0.197 [Port] 55504 [Flags] 2 [Guid] 1708725357 [EditorId] 1708725357 [Version] 1048832 [Id] WindowsEditor(7,PADURARU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [32656]  * "[IP] 172.21.0.1 [Port] 55504 [Flags] 2 [Guid] 1708725357 [EditorId] 1708725357 [Version] 1048832 [Id] WindowsEditor(7,PADURARU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [32656]  * "[IP] 172.19.96.1 [Port] 55504 [Flags] 2 [Guid] 1708725357 [EditorId] 1708725357 [Version] 1048832 [Id] WindowsEditor(7,PADURARU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [32656]  * "[IP] 192.168.56.1 [Port] 55504 [Flags] 2 [Guid] 1708725357 [EditorId] 1708725357 [Version] 1048832 [Id] WindowsEditor(7,PADURARU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [32656] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [32656] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-82928" after 0.4 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              3ad850d12c8f4219b71fe48c85ebb736
+  Correlation Id:          d7f646f0c66a56d48ebbd8c0c109954c
+  External correlation Id: 7833507398076757119
+  Machine Id:              dgDv2BQUnaBty5dFbVIGpeemBy4=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-cipri" (connect: 0.25s, validation: 0.04s, handshake: 1.28s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-cipri-notifications" at "2026-05-16T08:40:54.4941508Z"
+[Licensing::Module] Connected to LicensingClient (PId: 43868, launch time: 0.00, total connection time: 1.56s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: E4-EPUK-FUTC-2PU9-NJGU-XXXX
+  Product: Unity Education
+  Type: ULF
+  Expiration: 2026-07-16T12:51:32Z
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 1.59s
+[Licensing::Module] Licensing is initialized (took 0.53s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.9f1 (7a9955a4f2fa)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/cipri/OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science/WORK_PROGRESS/GameTesting/StoryFeasability/unity-demo/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4090 (ID=0x2684)
+    Vendor:   NVIDIA
+    VRAM:     24138 MB
+    Driver:   32.0.15.9597
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56928
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001581 seconds.
+- Loaded All Assemblies, in  0.417 seconds
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.355 seconds
+Domain Reload Profiling: 770ms
+	BeginReloadAssembly (108ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (8ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (232ms)
+		LoadAssemblies (98ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (229ms)
+			TypeCache.Refresh (228ms)
+				TypeCache.ScanAssembly (207ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (356ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (324ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (133ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+Package Manager log level set to [2]
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 14 packages:
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.test-framework@1.6.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.test-framework@0b7a23ab2e1d)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.ext.nunit@2.0.5 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.ext.nunit@d8c07649098d)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Library\PackageCache\com.unity.modules.physics)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/cipri/OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science/WORK_PROGRESS/GameTesting/StoryFeasability/unity-demo
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s82ms
+*** Tundra build success (0.05 seconds), 0 items updated, 200 evaluated
+AssetDatabase: script compilation time: 0.475727s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.429 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.363 seconds
+Domain Reload Profiling: 790ms
+	BeginReloadAssembly (263ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (145ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (104ms)
+		LoadAssemblies (163ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (7ms)
+			BuildScriptInfoCaches (4ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (363ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (269ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (99ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Asset Pipeline Refresh (id=d2da4abf32557314d951ccac9b867d64): Total: 1.466 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=525 ms
+		Asset DB Callback time: managed=9 ms, native=7 ms
+		Scripting: domain reloads=1, domain reload time=429 ms, compile time=477 ms, other=17 ms
+		Project Asset Count: scripts=126, non-scripts=117
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 8.525ms
+	ApplyChangesToAssetFolders: 0.399ms
+	Scan: 83.175ms
+	OnSourceAssetsModified: 0.003ms
+	CategorizeAssetsWithTransientArtifact: 2.727ms
+	ProcessAssetsWithTransientArtifactChanges: 4.347ms
+	CategorizeAssets: 1.586ms
+	ImportOutOfDateAssets: 364.298ms (-113.248ms without children)
+		CompileScripts: 477.257ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 0.109ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.027ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.153ms
+	PostProcessAllAssets: 9.443ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.002ms
+	UnloadStreamsBegin: 1.409ms
+	PersistCurrentRevisions: 0.005ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 0.200ms
+	Untracked: 990.309ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 7.154ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-unity-demo
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 473 unused Assets / (1.3 MB). Loaded Objects now: 1073.
+Memory consumption went from 93.7 MB to 92.3 MB.
+Total: 6.002600 ms (FindLiveObjects: 0.086000 ms CreateObjectMapping: 0.014300 ms MarkObjects: 5.091700 ms  DeleteObjects: 0.809700 ms)
+
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_M1_Intro.asset using Guid(16d7df0a6939c2c4ebb7e6d4f98acafc) (NativeFormatImporter) -> (artifact id: 'e303073af7b5cb3c7cfa5a21a89772d3') in 0.0059998 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b0ee4c06f1c31534891d5d04cc271dde): Total: 0.056 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_CityHub.asset using Guid(226ecfbf94d944b4b8f00db96468432e) (NativeFormatImporter) -> (artifact id: 'b375537aaf560ba40ca6b715ee04de5f') in 0.0020306 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f5068d46c0c6e6d4a888e917cad50246): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_Q_SideSniper.asset using Guid(487560da86c91e145b6a65f7389212a1) (NativeFormatImporter) -> (artifact id: 'aeb43f2d097a7fe883f20ed33cf976c2') in 0.0019971 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0991e2477459e9849854ebdabf07ca8d): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_M2_GateSetup.asset using Guid(220663280e80aca4ba90255bed94f352) (NativeFormatImporter) -> (artifact id: '09d1ba3a518237f0c97fc7e550107bd4') in 0.0018696 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e27fbd00787bb3b44974e7296a5dffcf): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_M3_BankHeist.asset using Guid(08a365f495fbfc54c83471d6266a837b) (NativeFormatImporter) -> (artifact id: '87f31645885a5462b802dabf33e2a59c') in 0.0017858 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7ef455a2eb0a18c4ea005765e2ff7985): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_M3_Escape.asset using Guid(599bb2fcd128f4b4c83d6c0174b20c38) (NativeFormatImporter) -> (artifact id: '80975c03c64e5d1716bd23cda3417ad2') in 0.0022901 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=120110945b1bc644ebd238f405e9942d): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_M5_BlackMarket.asset using Guid(1bb96fdb221d2384ea7333474b7218c8) (NativeFormatImporter) -> (artifact id: '11aad048151f6ed9160893e6e451f39a') in 0.0020036 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b55272f514f6c0343947b14b0230f3f9): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_M6_Rooftop.asset using Guid(ad2e0ef408676a14abfd6d47385192b3) (NativeFormatImporter) -> (artifact id: 'ac405f4c403f0fb6f71ae910b96b709e') in 0.0017691 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f8ae3412c7088f8409ccb8c0e7a2e11d): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_M7_Boss.asset using Guid(8b278790c6fb8a047a011818c6687882) (NativeFormatImporter) -> (artifact id: 'd29a1aa8c0324527ae8387065402506b') in 0.0015711 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4cf4a06417a0af842abab10e06ae0f21): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_M8_Ending.asset using Guid(26297842c5391d348b062d9244341de6) (NativeFormatImporter) -> (artifact id: '97d9c3dadf8732b8a052d1d568a25d5b') in 0.0020079 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=554749b64a27f634891b84e7c8cbdd9a): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_DeadEndDock.asset using Guid(32d24f3b977a7c54f8ae6d589e81a34a) (NativeFormatImporter) -> (artifact id: '2fdb40e3c1c7a3de1aeb9f830ea27bd7') in 0.0015274 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=258e80347e528f644b053eaa907e2214): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_1.asset using Guid(64baae8d682f3454faa54528ad55b138) (NativeFormatImporter) -> (artifact id: '3832662326322ef7f13d6eba9b383374') in 0.0015791 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0fec5809aaaf1c54f9ae18c0385289ba): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_2.asset using Guid(2cf99836a39ce6641b248453dea7e9ec) (NativeFormatImporter) -> (artifact id: '27685972f8356f0b6efaf8eb43e1981e') in 0.0016901 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4b4b302fbf119de4193cd05f1f77b248): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_3.asset using Guid(6012a761240a72f44a68a33b179b57f3) (NativeFormatImporter) -> (artifact id: '80e29efb702da975f5cfec6b3b5ef7c9') in 0.0021048 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=602861b9d89d96c4d967486590ae4bcc): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_4.asset using Guid(01f17a5d3f89e7744aa8348b4e4d283d) (NativeFormatImporter) -> (artifact id: '984bfc5de8d99c37dca8fdc571f06f94') in 0.0017548 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=903b508bc49e7a6499192de91540bac8): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_5.asset using Guid(5e9baeb57991b4b45ada8f5a4ff43e98) (NativeFormatImporter) -> (artifact id: '4c05f29c66d5b4c7e8fe10dfca2807b3') in 0.0017486 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1b011c50d33ddb844a1ce7a757b4a9b3): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_IntroComplete.asset using Guid(74b0e697052f321478d4c8dbe6e781fb) (NativeFormatImporter) -> (artifact id: '121ea0f937810aa12de8add65ba320de') in 0.0013829 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=671e5ff2453157f4e913df2603aaa460): Total: 0.008 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_StoryObjectiveFlag.asset using Guid(8d0b8692c39e31640a67a64b66397d4a) (NativeFormatImporter) -> (artifact id: '254ddd6fe4d7bfa8a233de476199c84b') in 0.0018488 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=776253864e69e024b84f969fa95864a4): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_SniperRifle.asset using Guid(5ad3eb240490773438c03bc71d22df68) (NativeFormatImporter) -> (artifact id: '5bf67916cd92fffd5c96bd3d7b51737a') in 0.0016865 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=74cf29cc5768da745b3ed85c93100ed7): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_SniperQuestDone.asset using Guid(23b72926b8c2daa42b4a46399ec41280) (NativeFormatImporter) -> (artifact id: '5421256f5455e1b6b0af67ac70912409') in 0.0019266 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=adfb44006e13b364eae9a9ab7734610d): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_SniperSold.asset using Guid(a300041e4b4ad7842a01467e4fd390d4) (NativeFormatImporter) -> (artifact id: 'd997d7408c8ae6f6104b2c95f5afae06') in 0.0016418 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cab011c5b7173bd41af8dbb04ba6fbe3): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_GateOpened.asset using Guid(24d59e23a3d476140801fb8c386a0cd3) (NativeFormatImporter) -> (artifact id: '7b2db43bd7dbcb4d5d0c93923b793a27') in 0.0019055 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a2759429c36916542b6ff4f9803d3a9b): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_HeistComplete.asset using Guid(3ea86604c099035438835e0bb88dfc86) (NativeFormatImporter) -> (artifact id: 'a414cfc318ed8bb9420d890f3c1db2d5') in 0.0016606 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ce4ceebe597d9a64fb497425ce299d2a): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_EscapeStarted.asset using Guid(42772d2c4a90ee441adbdb3f3df92e09) (NativeFormatImporter) -> (artifact id: '8a99101a69f05c83b519db2164b8a362') in 0.0017364 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=02ed2d700fc30ce4e89f727b766c2a69): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_FinaleUnlocked.asset using Guid(f1e49474ed00c1e4c81475a1e5141ffe) (NativeFormatImporter) -> (artifact id: 'cbaed20acefd7b3816742bdfc6d2d1d1') in 0.0016307 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=991597cdc9d60fc4fbc23c86540606a3): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryAssetDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Asset_WantedLevelGE4.asset using Guid(b7b1e4bd14110194f82be4b418ba31ce) (NativeFormatImporter) -> (artifact id: '12e243cb33bdb4223473e86f36cc79bf') in 0.0018059 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8244e875a15d5e446a8d354cb007d85a): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryQuestDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_SideSniper.asset using Guid(b2fae7db9d6840e468242ab9eaeded1f) (NativeFormatImporter) -> (artifact id: 'd11ba4ebe9fd07b15ccbc0690efbed47') in 0.0018469 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=eaba8610bfb97ff4798bc17705ae9cd1): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryQuestDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_MainGateSetup.asset using Guid(38241972d03d46b4494357f22c0f2266) (NativeFormatImporter) -> (artifact id: '56a6da72d0c353a1312d5ce997cdf40a') in 0.0017422 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4adde1152a006724c8d358abdc51347b): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryQuestDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_MainHeist.asset using Guid(cb240e33c8a97b64cacb498604622938) (NativeFormatImporter) -> (artifact id: 'ddee585ca4b8e99668a882a947683c2d') in 0.0018845 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bb5a835a43584874f8794cdc4faf8da8): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryQuestDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_MainEscape.asset using Guid(4942e60f1782bdc44934e5fe69329d88) (NativeFormatImporter) -> (artifact id: '73b2c45995a3632c5afb1734fe4f0c9c') in 0.0017235 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=af048c3c64019ec4b8e0b7ab30f5f1e5): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryQuestDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_MainFinale.asset using Guid(b72a239ae62136b47b585db3317c3a8e) (NativeFormatImporter) -> (artifact id: '83340a2c1d9670b78ce381adcd8c945b') in 0.0017417 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a4a834518b34a5e4b9f33b55a7e3e32b): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for MandatoryStoryStateDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Mandatory_M7_Boss.asset using Guid(1b4df0f26f0ea7e4f98b9002e3c918dd) (NativeFormatImporter) -> (artifact id: '27abbb2a2d1c433b277f0a74a4ccdbef') in 0.0019529 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4f36b7bc402c382499433b1254115243): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_intro_city.asset using Guid(84269307174b52f48ba83e856210a0fc) (NativeFormatImporter) -> (artifact id: '65526f1f596bab7c9acab38bb941e965') in 0.0017004 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cdbf9020e2a51dd44a95fd3a12f246bf): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_side_sniper.asset using Guid(96cde8ab64fd77c45be26156f4289464) (NativeFormatImporter) -> (artifact id: 'aa886278a2c9d02c4cf4652e6ce58d8e') in 0.0019287 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f12c5811f95feec4681d9fc5aee8d9d7): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_side_sniper_city.asset using Guid(0fbaa3482227f7d4da830914b5b7cf92) (NativeFormatImporter) -> (artifact id: '5f609429667f25d5963b9540f23ce67c') in 0.00186 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=09a005fbd08be684ba17ab26fba824c8): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_gate_setup.asset using Guid(fc6d6a93a27abfd409961064687be4e9) (NativeFormatImporter) -> (artifact id: '4f9c87b28272b6e3fb0208c85ad46e4b') in 0.0018364 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ff8a00d2f9704de478484ac595791644): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_gate_setup_city.asset using Guid(55700701161945e49bf52494b88be3b8) (NativeFormatImporter) -> (artifact id: 'a577259e5fb7fad6ee48dbaef0d5eb67') in 0.0015675 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=09f1e78ac56b3f34aadebe3877bdbc83): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_heist.asset using Guid(c79c3ef9607a63141994e9ce89f453b9) (NativeFormatImporter) -> (artifact id: '8bc79dff2e862a5432e68a148a7def18') in 0.0018613 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=db2a1b32fe384874ea15508d41227453): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_heist_escape.asset using Guid(d3a7872b96aa51447949467b1b6b7434) (NativeFormatImporter) -> (artifact id: '44be4385815570fa9b5d9c7a6556a2c8') in 0.004839 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bd0f932d6bfe2f04f9b5414f0805e813): Total: 0.012 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_escape_rooftop.asset using Guid(454a5e8d6f406bf48ae9a94d23d7b788) (NativeFormatImporter) -> (artifact id: '58a1d74e31e2000089d4847949ebde8b') in 0.0018252 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3b58f756c94110740a2dc51c0929bbad): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_rooftop_boss.asset using Guid(1f3ab734cccb76f4e9f599a87f1a54ee) (NativeFormatImporter) -> (artifact id: '7cc3a4a4d2e194a20548d615205e9437') in 0.0019268 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=39d68d43e553d2e49877b466a4b27f4f): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_boss_ending.asset using Guid(6478ecf777cfff749a4bb4a9280fda71) (NativeFormatImporter) -> (artifact id: 'aea012d6aff285514ead3849459886da') in 0.0019907 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=293e84961ef881b4c8f077a14a8f9a6e): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_black_market.asset using Guid(2fec2c6747dbfb746887c3f582b41ac9) (NativeFormatImporter) -> (artifact id: '4d3adab15c3815347aa66a76090a0c83') in 0.0014551 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=eff947af5608c344dafe5d38e3235c52): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_black_market_city.asset using Guid(b10c0213d3e893047b47d0394143e608) (NativeFormatImporter) -> (artifact id: '1dc55ec2eb0d4c865a491067ea1200ae') in 0.0014264 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=70b3e0044f21c16439999e8184650bb4): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_dev_shortcut.asset using Guid(143424e2257db7448aa9383f411c1308) (NativeFormatImporter) -> (artifact id: '2cc7d3c0cf417b1ea15e7cd199b5e3ca') in 0.0017843 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6f90fa1ccfc9e904f9d07f3570855500): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_dead_end.asset using Guid(b179b29de20524a4c8b6ae31902d272c) (NativeFormatImporter) -> (artifact id: 'c0f2a84001fd77522b64205caa8d8777') in 0.0017604 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=97acbe6df31f42642ab167a456984912): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_long_recovery_1.asset using Guid(c25fe0308436111459d9e516e69cfebf) (NativeFormatImporter) -> (artifact id: '7bc37b6cefacd7360154df72f1b33e6c') in 0.0016776 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=548f51ead9569ca4281daa16f51f0aac): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_1_2.asset using Guid(16a35304048db2d46a18921b88b85a2b) (NativeFormatImporter) -> (artifact id: '13dc31722bc44917fddce183ef781d92') in 0.001891 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=738c61b550cce754b980a23796ef5c97): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_2_3.asset using Guid(6170b68f6025e9342a60dddd5a161d73) (NativeFormatImporter) -> (artifact id: 'ad50c70f67ae0bf673ee8a28e6158f12') in 0.0018181 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=85b096bb9ce995b4394f7c7b86b6b04f): Total: 0.013 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_3_4.asset using Guid(d6686298b7a0704449ec9703b4dcb4f3) (NativeFormatImporter) -> (artifact id: '3aade45ce7ba884b9bfc6fbb3d8542cd') in 0.001847 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e655e4f99f1d003488776e4396dd6c10): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_4_5.asset using Guid(46a29b7bc9aa44c408da79c1230c95fc) (NativeFormatImporter) -> (artifact id: 'bfd26d6c10e5ceb10eed33fc86e4b620') in 0.0017864 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=21f16bc42bb7d4144b9f873e46cb4c11): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryTransitionDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_5_city.asset using Guid(657460d83946ca3418e8ffb77a439543) (NativeFormatImporter) -> (artifact id: 'f09aa2483bc18e35c547c7df7ec3d126') in 0.0016344 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=837a0418e0f57e8438a1bb6027065730): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+No script asset for StoryChapterDef. Check that the definition is in a file of the same name and that it compiles properly.
+Start importing Assets/StoryFeasibility/DemoData/UnityPrototypeChapter.asset using Guid(9dbd854268e718e4da5cec1e1e7a57ed) (NativeFormatImporter) -> (artifact id: 'efb5a6ed359440ec6d20efe43e21891e') in 0.0019873 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4191d6b398f36ed4fa7f6f8d2e680851): Total: 0.009 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_3.asset using Guid(6012a761240a72f44a68a33b179b57f3) (NativeFormatImporter) -> (artifact id: '8a8d5cc105a3aa31980011dee501c266') in 0.001922 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_4.asset using Guid(01f17a5d3f89e7744aa8348b4e4d283d) (NativeFormatImporter) -> (artifact id: '3837ac5b461ce65b4d36bd46daa52b1c') in 0.0015559 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_2_3.asset using Guid(6170b68f6025e9342a60dddd5a161d73) (NativeFormatImporter) -> (artifact id: '8ff0f18747ad7b1b41ab4c54e664c149') in 0.0016259 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_dead_end.asset using Guid(b179b29de20524a4c8b6ae31902d272c) (NativeFormatImporter) -> (artifact id: '4ee9d6948cb28e07f8ba1caaf1c80243') in 0.0014757 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_black_market_city.asset using Guid(b10c0213d3e893047b47d0394143e608) (NativeFormatImporter) -> (artifact id: 'd9cf369d565e1a6dc9ce5c51f4d6290d') in 0.0015758 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_FinaleUnlocked.asset using Guid(f1e49474ed00c1e4c81475a1e5141ffe) (NativeFormatImporter) -> (artifact id: '7499376d7dfab62a85fd025315133725') in 0.0015851 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_M2_GateSetup.asset using Guid(220663280e80aca4ba90255bed94f352) (NativeFormatImporter) -> (artifact id: '801d6bec1933ed3437d5b6cde73a2f2d') in 0.0013142 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_CityHub.asset using Guid(226ecfbf94d944b4b8f00db96468432e) (NativeFormatImporter) -> (artifact id: 'ff4a4721d6c343cf59406545995104b0') in 0.0013086 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_DeadEndDock.asset using Guid(32d24f3b977a7c54f8ae6d589e81a34a) (NativeFormatImporter) -> (artifact id: '050ca252da9318c98f448cd694c06aa3') in 0.0017301 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_EscapeStarted.asset using Guid(42772d2c4a90ee441adbdb3f3df92e09) (NativeFormatImporter) -> (artifact id: 'ee98ee72057fe34670c7b4c8fa389d00') in 0.0014679 seconds
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_SideSniper.asset using Guid(b2fae7db9d6840e468242ab9eaeded1f) (NativeFormatImporter) -> (artifact id: 'b3943d452030d092f384ac7511d82785') in 0.0014357 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_long_recovery_1.asset using Guid(c25fe0308436111459d9e516e69cfebf) (NativeFormatImporter) -> (artifact id: '245c3f2100c3853b8fe3836cb227ea90') in 0.0016434 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_SniperQuestDone.asset using Guid(23b72926b8c2daa42b4a46399ec41280) (NativeFormatImporter) -> (artifact id: '9f0e080277099ce5642082a4805dbb36') in 0.0015422 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_SniperSold.asset using Guid(a300041e4b4ad7842a01467e4fd390d4) (NativeFormatImporter) -> (artifact id: '727a03c9425c9328ee9cddc692608bb2') in 0.0012483 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_heist_escape.asset using Guid(d3a7872b96aa51447949467b1b6b7434) (NativeFormatImporter) -> (artifact id: 'a9aab1eb0555935b946797fb4b7f2046') in 0.0012637 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_dev_shortcut.asset using Guid(143424e2257db7448aa9383f411c1308) (NativeFormatImporter) -> (artifact id: '9dafaa724422807aa1381f22deb8483e') in 0.0012971 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_GateOpened.asset using Guid(24d59e23a3d476140801fb8c386a0cd3) (NativeFormatImporter) -> (artifact id: '2537bdd5871582081eb6a3a4e9c4a4d9') in 0.0012839 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_boss_ending.asset using Guid(6478ecf777cfff749a4bb4a9280fda71) (NativeFormatImporter) -> (artifact id: 'dbb08b945bc17c88d57cf881c5a6e9d6') in 0.0014241 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_1.asset using Guid(64baae8d682f3454faa54528ad55b138) (NativeFormatImporter) -> (artifact id: '8677155e7ee8f82f29e6a3814c299ffe') in 0.0031056 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_IntroComplete.asset using Guid(74b0e697052f321478d4c8dbe6e781fb) (NativeFormatImporter) -> (artifact id: 'dfb348adbcdab0b70cbc106fcf177ce9') in 0.0016584 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_intro_city.asset using Guid(84269307174b52f48ba83e856210a0fc) (NativeFormatImporter) -> (artifact id: 'f81cfe10d775f4e060ea0ed37009af0b') in 0.0012849 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_escape_rooftop.asset using Guid(454a5e8d6f406bf48ae9a94d23d7b788) (NativeFormatImporter) -> (artifact id: 'f4b95676f54e05135b48aa73aaa9cb3a') in 0.0011916 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_gate_setup_city.asset using Guid(55700701161945e49bf52494b88be3b8) (NativeFormatImporter) -> (artifact id: '2528a0be96c24278b728390ba39b3083') in 0.0014888 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_5_city.asset using Guid(657460d83946ca3418e8ffb77a439543) (NativeFormatImporter) -> (artifact id: 'e112812d061d70e6813b241e1da91fd2') in 0.0014901 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_1_2.asset using Guid(16a35304048db2d46a18921b88b85a2b) (NativeFormatImporter) -> (artifact id: '1a347c405500249f58dd7464f2a5fdf5') in 0.0015279 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_M1_Intro.asset using Guid(16d7df0a6939c2c4ebb7e6d4f98acafc) (NativeFormatImporter) -> (artifact id: '8ada4b2c014ee32c60ba198817372cfa') in 0.0012856 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_M8_Ending.asset using Guid(26297842c5391d348b062d9244341de6) (NativeFormatImporter) -> (artifact id: '2df87682cd5590aefe120c77cbb4ac7f') in 0.0016942 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_4_5.asset using Guid(46a29b7bc9aa44c408da79c1230c95fc) (NativeFormatImporter) -> (artifact id: '795a72805e970be77c7eded8906f3fb9') in 0.0014098 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_side_sniper.asset using Guid(96cde8ab64fd77c45be26156f4289464) (NativeFormatImporter) -> (artifact id: '859f7d7e172737ee3d595c6c4d03d96d') in 0.0013087 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_long_recovery_3_4.asset using Guid(d6686298b7a0704449ec9703b4dcb4f3) (NativeFormatImporter) -> (artifact id: '920299af0e74dd9cd51d2d0111026e46') in 0.0014873 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_WantedLevelGE4.asset using Guid(b7b1e4bd14110194f82be4b418ba31ce) (NativeFormatImporter) -> (artifact id: 'd4a2c956c076beb10fe9818787bd870c') in 0.0013699 seconds
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_MainFinale.asset using Guid(b72a239ae62136b47b585db3317c3a8e) (NativeFormatImporter) -> (artifact id: '35a26a5662706ea034f991e6b59b67e1') in 0.0015418 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_heist.asset using Guid(c79c3ef9607a63141994e9ce89f453b9) (NativeFormatImporter) -> (artifact id: '5c0e997c7d9ec1ec085e7c0439103a90') in 0.0014616 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_M3_BankHeist.asset using Guid(08a365f495fbfc54c83471d6266a837b) (NativeFormatImporter) -> (artifact id: '8e1a618f85c5e129fc8cf5f47b554ad6') in 0.0030856 seconds
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_MainGateSetup.asset using Guid(38241972d03d46b4494357f22c0f2266) (NativeFormatImporter) -> (artifact id: '100f7d71ceaab53e554cc3cd60be07e9') in 0.0019788 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_Q_SideSniper.asset using Guid(487560da86c91e145b6a65f7389212a1) (NativeFormatImporter) -> (artifact id: '21de7439f730ce1b10f49aa76eaf6106') in 0.0018011 seconds
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_MainEscape.asset using Guid(4942e60f1782bdc44934e5fe69329d88) (NativeFormatImporter) -> (artifact id: '27cae2f6852731ada0e1647453df604f') in 0.0032327 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_M3_Escape.asset using Guid(599bb2fcd128f4b4c83d6c0174b20c38) (NativeFormatImporter) -> (artifact id: 'ffdb72bcf4c2730b9783157b8b98c74d') in 0.0016663 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_SniperRifle.asset using Guid(5ad3eb240490773438c03bc71d22df68) (NativeFormatImporter) -> (artifact id: 'b347c0d26b8088efbd48ad32b92e9923') in 0.0014369 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_M5_BlackMarket.asset using Guid(1bb96fdb221d2384ea7333474b7218c8) (NativeFormatImporter) -> (artifact id: '69fbd7d46206997a454732f6c4f6ca1d') in 0.0014461 seconds
+Start importing Assets/StoryFeasibility/DemoData/Mandatory_M7_Boss.asset using Guid(1b4df0f26f0ea7e4f98b9002e3c918dd) (NativeFormatImporter) -> (artifact id: '4aed9543767e9635b2fdd1ff13a4acf1') in 0.0013923 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_M7_Boss.asset using Guid(8b278790c6fb8a047a011818c6687882) (NativeFormatImporter) -> (artifact id: '514ccacfe58ccf4559ee3384fc153013') in 0.0015221 seconds
+Start importing Assets/StoryFeasibility/DemoData/Quest_Q_MainHeist.asset using Guid(cb240e33c8a97b64cacb498604622938) (NativeFormatImporter) -> (artifact id: '7b39ad788c45d8b5b12eb5f0d853d685') in 0.0037252 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_2.asset using Guid(2cf99836a39ce6641b248453dea7e9ec) (NativeFormatImporter) -> (artifact id: '5719c816869c64d2f9382d250d00682d') in 0.0024144 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_gate_setup.asset using Guid(fc6d6a93a27abfd409961064687be4e9) (NativeFormatImporter) -> (artifact id: '7981420e60d8eca72929ecf6d7b94b5a') in 0.0015882 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_StoryObjectiveFlag.asset using Guid(8d0b8692c39e31640a67a64b66397d4a) (NativeFormatImporter) -> (artifact id: '15906497185ecae0332531c12ca851a3') in 0.0016153 seconds
+Start importing Assets/StoryFeasibility/DemoData/UnityPrototypeChapter.asset using Guid(9dbd854268e718e4da5cec1e1e7a57ed) (NativeFormatImporter) -> (artifact id: '9c8048a0340afa01adf43dd175b02132') in 0.0015877 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_M6_Rooftop.asset using Guid(ad2e0ef408676a14abfd6d47385192b3) (NativeFormatImporter) -> (artifact id: 'bab4a44c239f7974495a6959d7935263') in 0.0015107 seconds
+Start importing Assets/StoryFeasibility/DemoData/Asset_HeistComplete.asset using Guid(3ea86604c099035438835e0bb88dfc86) (NativeFormatImporter) -> (artifact id: '4b734269cb9ff9b703433ec1e1334294') in 0.001652 seconds
+Start importing Assets/StoryFeasibility/DemoData/State_LongRecovery_5.asset using Guid(5e9baeb57991b4b45ada8f5a4ff43e98) (NativeFormatImporter) -> (artifact id: '1079dbb4ed288114b3d8f75eb8383696') in 0.0016534 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_side_sniper_city.asset using Guid(0fbaa3482227f7d4da830914b5b7cf92) (NativeFormatImporter) -> (artifact id: '95cc6db51bcf2ea7735fcdc0baa1904a') in 0.0018212 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_rooftop_boss.asset using Guid(1f3ab734cccb76f4e9f599a87f1a54ee) (NativeFormatImporter) -> (artifact id: '7d59bfaf8a3a6292d2ee430143e1ee78') in 0.001443 seconds
+Start importing Assets/StoryFeasibility/DemoData/Transition_t_city_black_market.asset using Guid(2fec2c6747dbfb746887c3f582b41ac9) (NativeFormatImporter) -> (artifact id: '3a2953b02444ceca1597f893a2182156') in 0.0013768 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5a12052955eaeb34693a85f0a3126153): Total: 0.110 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=1ed60aac4a57fcc40ae54d09c7eadbb4): Total: 0.011 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Created demo chapter assets under Assets/StoryFeasibility/DemoData
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+StoryFeasibilityEditor.DemoChapterFactory:CreateDemoChapterAssets () (at Assets/StoryFeasibility/Editor/DemoChapterFactory.cs:108)
+StoryFeasibilityEditor.DemoChapterFactory:ExportDemoChapterForBatch () (at Assets/StoryFeasibility/Editor/DemoChapterFactory.cs:116)
+
+(Filename: Assets/StoryFeasibility/Editor/DemoChapterFactory.cs Line: 108)
+
+Batch-exported demo story graph to C:\Users\cipri\OneDrive - University of Bucharest, Faculty of Mathematics and Computer Science\WORK_PROGRESS\GameTesting\StoryFeasability\unity-demo\Exported\story_graph.json
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+StoryFeasibilityEditor.DemoChapterFactory:ExportDemoChapterForBatch () (at Assets/StoryFeasibility/Editor/DemoChapterFactory.cs:127)
+
+(Filename: Assets/StoryFeasibility/Editor/DemoChapterFactory.cs Line: 127)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-cipri-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-cipri channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,0 +1,18 @@
+* text=auto
+
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.exe binary
+*.dll binary
+*.a binary
+
+*.py text eol=lf
+*.cs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.dsl text eol=lf
+*.smv text eol=lf
+*.tex text eol=lf
+*.ps1 text eol=crlf

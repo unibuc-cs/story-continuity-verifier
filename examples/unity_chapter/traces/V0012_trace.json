@@ -1,0 +1,94 @@
+{
+  "initial_state": "M1_Intro",
+  "initial_assets": [],
+  "actions": [
+    {
+      "index": 0,
+      "transition_id": "t_intro_city",
+      "action_type": "enter_hub",
+      "from": "M1_Intro",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete"
+      ]
+    },
+    {
+      "index": 1,
+      "transition_id": "t_city_side_sniper",
+      "action_type": "complete_quest",
+      "from": "CityHub",
+      "to": "Q_SideSniper",
+      "params": {
+        "quest": "Q_SideSniper"
+      },
+      "parameters": [
+        {
+          "key": "quest",
+          "value": "Q_SideSniper"
+        }
+      ],
+      "expected_state": "Q_SideSniper",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle"
+      ]
+    },
+    {
+      "index": 2,
+      "transition_id": "t_side_sniper_city",
+      "action_type": "enter_hub",
+      "from": "Q_SideSniper",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle"
+      ]
+    },
+    {
+      "index": 3,
+      "transition_id": "t_city_black_market",
+      "action_type": "sell_asset",
+      "from": "CityHub",
+      "to": "M5_BlackMarket",
+      "params": {
+        "asset": "SniperRifle"
+      },
+      "parameters": [
+        {
+          "key": "asset",
+          "value": "SniperRifle"
+        }
+      ],
+      "expected_state": "M5_BlackMarket",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperSold"
+      ]
+    }
+  ],
+  "violation_id": "V0012",
+  "violation_class": "disposable_critical_resource"
+}

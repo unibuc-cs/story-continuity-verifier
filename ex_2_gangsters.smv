@@ -1,0 +1,103 @@
+\begin{lstlisting}[style=UBListing,caption={Sketch of SMV encoding generated from the exported story graph.},label={lst:smv-encoding}]
+MODULE main
+
+VAR
+  -- Abstract story state (missions, hubs, cutscenes)
+  state : {
+    M1_Intro, CityHub,
+    M3_BankHeist, M3_Escape,
+    M6_Rooftop, M7_Boss,
+    M9_Ending
+  };
+
+  -- Asset and flag predicates from the export
+  has_SniperRifle : boolean;
+  flag_GateOpened : boolean;
+  flag_M7_Visited : boolean;
+  StoryObjectiveFlag : boolean;
+
+  -- Example numeric variable for wanted level
+  wantedLevel : 0..5;
+
+ASSIGN
+  -- Initial configuration from "initial_state"
+  init(state) := M1_Intro;
+  init(has_SniperRifle) := FALSE;
+  init(flag_GateOpened) := FALSE;
+  init(flag_M7_Visited) := FALSE;
+  init(StoryObjectiveFlag) := FALSE;
+  init(wantedLevel) := 0;
+
+  -- Transition relation derived from "transitions"
+  next(state) :=
+    case
+      -- Example transition: M6_Rooftop -> M7_Boss with precondition GateOpened
+      state = M6_Rooftop & flag_GateOpened : M7_Boss;
+
+      -- Bank heist completes and immediately leads to escape mission
+      state = M3_BankHeist : M3_Escape;
+
+      -- City hub may lead to an objective mission that sets StoryObjectiveFlag
+      state = CityHub : CityHub; -- other outgoing edges omitted for brevity
+
+      -- Default: remain in current state if no edge is enabled
+      TRUE : state;
+    esac;
+
+  -- Simple example of how rewards/effects are encoded
+  next(has_SniperRifle) :=
+    case
+      -- Side quest Q3_SideSniper grants SniperRifle (abstracted here
+      -- as a transition into a synthetic state or via a dedicated flag)
+      state = CityHub & !has_SniperRifle : TRUE;
+      TRUE : has_SniperRifle;
+    esac;
+
+  next(flag_GateOpened) :=
+    case
+      -- Some earlier mission opens the gate (not shown in JSON excerpt)
+      -- and the flag persists afterwards
+      state = M6_Rooftop : TRUE;
+      TRUE : flag_GateOpened;
+    esac;
+
+  next(flag_M7_Visited) :=
+    case
+      state = M7_Boss : TRUE;
+      TRUE : flag_M7_Visited;
+    esac;
+
+  next(StoryObjectiveFlag) :=
+    case
+      -- Objective becomes true when a dedicated mission completes
+      state = M3_Escape : TRUE;
+      TRUE : StoryObjectiveFlag;
+    esac;
+
+  next(wantedLevel) :=
+    case
+      -- Wanted level evolves according to mission type (simplified)
+      state = M3_BankHeist : min(wantedLevel + 2, 5);
+      state = M3_Escape     : max(wantedLevel - 1, 0);
+      TRUE                  : wantedLevel;
+    esac;
+
+DEFINE
+  -- Propositions used in CTL/LTL properties
+  atState_M7_Boss      := state = M7_Boss;
+  atState_CityHub      := state = CityHub;
+  completed_M_Final    := state = M9_Ending;
+  completed_M3_Heist   := state = M3_BankHeist;
+  wantedLevelGE4       := wantedLevel >= 4;
+  hasSniperRifle       := has_SniperRifle;
+
+-- CTL examples (P1, P3, P4); P2 is checked via BMC with a bound K
+CTLSPEC AG (atState_M7_Boss -> hasSniperRifle);
+
+CTLSPEC AG (completed_M_Final -> !wantedLevelGE4);
+
+CTLSPEC AG (completed_M3_Heist -> AX state = M3_Escape);
+
+-- LTL example for hub progress, checked using BMC up to depth K:
+-- LTLSPEC G (atState_CityHub -> F StoryObjectiveFlag);
+\end{lstlisting}

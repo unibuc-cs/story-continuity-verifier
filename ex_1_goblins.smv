@@ -1,0 +1,49 @@
+MODULE main
+
+-- 1. DEFINE THE VARIABLES (The Game State)
+VAR
+  room : {entrance, armory, boss_lair, victory, dead};
+  has_sword : boolean;
+
+-- 2. DEFINE THE STATE MACHINE (The Game Logic)
+ASSIGN
+  -- Where does the player spawn?
+  init(room) := entrance;
+  init(has_sword) := FALSE;
+
+  -- How does the player move?
+  next(room) := case
+    room = entrance : {armory, boss_lair};            -- The branching choice
+    room = armory : entrance;                         -- Must go back to entrance
+    room = boss_lair & has_sword = TRUE : victory;    -- The Good Ending
+    room = boss_lair & has_sword = FALSE : dead;      -- The Bad Ending
+    room = victory : victory;                         -- Game Over (Sink State)
+    room = dead : dead;                               -- Game Over (Sink State)
+    TRUE : room;
+  esac;
+
+  -- How does the inventory work?
+  next(has_sword) := case
+    room = armory : TRUE;                             -- Pick up the sword
+    TRUE : has_sword;                                 -- Otherwise, keep what you have
+  esac;
+
+-- 3. PLAYTESTING WITH CTL FORMULAS
+
+-- Check 1: Feasibility (Is the game beatable?)
+SPEC EF (room = victory)
+
+-- Check 2: The Trap (Is it possible to die?)
+SPEC EF (room = dead)
+
+-- Check 3: Sequence Breaking (Do we absolutely need the sword to win?)
+-- Translation: "On all paths, we stay out of the victory room UNTIL we have the sword."
+SPEC A [(room != victory) U (has_sword = TRUE)]
+
+-- Check 4: The Soft-Lock (Can we get stuck permanently wandering?)
+-- Translation: "Does there exist a path where we globally never reach an ending?"
+SPEC EG (room != victory & room != dead)
+
+-- Check 5: Guaranteed Consequences (If I get the sword, am I forced to win?)
+-- Translation: "On all paths globally, having the sword means we finally win."
+SPEC AG (has_sword = TRUE -> AF (room = victory))

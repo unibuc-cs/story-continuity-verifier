@@ -1,0 +1,214 @@
+{
+  "initial_state": "M1_Intro",
+  "initial_assets": [],
+  "actions": [
+    {
+      "index": 0,
+      "transition_id": "t_intro_city",
+      "action_type": "enter_hub",
+      "from": "M1_Intro",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete"
+      ]
+    },
+    {
+      "index": 1,
+      "transition_id": "t_city_side_sniper",
+      "action_type": "complete_quest",
+      "from": "CityHub",
+      "to": "Q_SideSniper",
+      "params": {
+        "quest": "Q_SideSniper"
+      },
+      "parameters": [
+        {
+          "key": "quest",
+          "value": "Q_SideSniper"
+        }
+      ],
+      "expected_state": "Q_SideSniper",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle"
+      ]
+    },
+    {
+      "index": 2,
+      "transition_id": "t_side_sniper_city",
+      "action_type": "enter_hub",
+      "from": "Q_SideSniper",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle"
+      ]
+    },
+    {
+      "index": 3,
+      "transition_id": "t_city_gate_setup",
+      "action_type": "complete_mission",
+      "from": "CityHub",
+      "to": "M2_GateSetup",
+      "params": {
+        "mission": "M2_GateSetup"
+      },
+      "parameters": [
+        {
+          "key": "mission",
+          "value": "M2_GateSetup"
+        }
+      ],
+      "expected_state": "M2_GateSetup",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle",
+        "StoryObjectiveFlag"
+      ]
+    },
+    {
+      "index": 4,
+      "transition_id": "t_gate_setup_city",
+      "action_type": "enter_hub",
+      "from": "M2_GateSetup",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperRifle",
+        "StoryObjectiveFlag"
+      ]
+    },
+    {
+      "index": 5,
+      "transition_id": "t_city_black_market",
+      "action_type": "sell_asset",
+      "from": "CityHub",
+      "to": "M5_BlackMarket",
+      "params": {
+        "asset": "SniperRifle"
+      },
+      "parameters": [
+        {
+          "key": "asset",
+          "value": "SniperRifle"
+        }
+      ],
+      "expected_state": "M5_BlackMarket",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperSold",
+        "StoryObjectiveFlag"
+      ]
+    },
+    {
+      "index": 6,
+      "transition_id": "t_black_market_city",
+      "action_type": "enter_hub",
+      "from": "M5_BlackMarket",
+      "to": "CityHub",
+      "params": {
+        "state": "CityHub"
+      },
+      "parameters": [
+        {
+          "key": "state",
+          "value": "CityHub"
+        }
+      ],
+      "expected_state": "CityHub",
+      "expected_assets": [
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperSold",
+        "StoryObjectiveFlag"
+      ]
+    },
+    {
+      "index": 7,
+      "transition_id": "t_city_heist",
+      "action_type": "complete_mission",
+      "from": "CityHub",
+      "to": "M3_BankHeist",
+      "params": {
+        "mission": "M3_BankHeist"
+      },
+      "parameters": [
+        {
+          "key": "mission",
+          "value": "M3_BankHeist"
+        }
+      ],
+      "expected_state": "M3_BankHeist",
+      "expected_assets": [
+        "HeistComplete",
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperSold",
+        "StoryObjectiveFlag"
+      ]
+    },
+    {
+      "index": 8,
+      "transition_id": "t_heist_escape",
+      "action_type": "complete_mission",
+      "from": "M3_BankHeist",
+      "to": "M3_Escape",
+      "params": {
+        "mission": "M3_Escape"
+      },
+      "parameters": [
+        {
+          "key": "mission",
+          "value": "M3_Escape"
+        }
+      ],
+      "expected_state": "M3_Escape",
+      "expected_assets": [
+        "EscapeStarted",
+        "HeistComplete",
+        "IntroComplete",
+        "SniperQuestDone",
+        "SniperSold",
+        "StoryObjectiveFlag",
+        "WantedLevelGE4"
+      ]
+    }
+  ],
+  "violation_id": "V0007",
+  "violation_class": "hard_lock"
+}
