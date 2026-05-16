@@ -1,6 +1,6 @@
 # Paper-to-Code Traceability Matrix
 
-This document maps the claims and artefacts in `docs/paper/main.tex` to the current implementation draft. It is intended for review prep: every paper concept should either have implementation evidence, a clear partial implementation, or an explicit gap.
+This document maps the claims and artefacts in `docs/paper/main.tex` to the current implementation. Its purpose is to make the correspondence between the paper, the public artefact, and known limitations explicit.
 
 ## Status Legend
 
@@ -9,8 +9,8 @@ This document maps the claims and artefacts in `docs/paper/main.tex` to the curr
 | Implemented | Present in code and exercised by generated reports or tests. |
 | Partial | Implemented for the demo path, but not at the full scope described in the paper. |
 | Demo-only | Present as a small seeded prototype, not as the full paper evaluation dataset. |
-| Out of scope | Deliberately not implemented in this review draft. |
-| Missing | Described in the paper but not yet represented in the draft. |
+| Out of scope | Deliberately not implemented in this public artefact. |
+| Missing | Described in the paper but not yet represented in the implementation. |
 
 ## Research Questions
 
@@ -18,7 +18,7 @@ This document maps the claims and artefacts in `docs/paper/main.tex` to the curr
 | --- | --- | --- | --- |
 | RQ1: resource-annotated story graphs and continuity requirements | Implemented | `checker/story_checker/models.py`, `examples/unity_chapter/story_graph.json`, `examples/unity_chapter/rules.dsl`, `unity-demo/Assets/StoryFeasibility/Editor/StoryGraphExporter.cs` | Covers states, assets, quests, guarded transitions, mandatory states, and P1-P4 style rules. |
 | RQ2: trace-to-replay validity | Partial | `checker/story_checker/analysis.py` trace generation, `unity-demo/Assets/StoryFeasibility/Runtime/StoryReplayHarness.cs`, `unity-demo/Assets/StoryFeasibility/Tests/PlayMode/StoryRuntimePlayModeTests.cs` | Replay harness and trace shape exist; PlayMode tests validate replay mechanics. Automated batch replay of every generated checker trace is not yet implemented. |
-| RQ3: pipeline utility against SR/AQ/RA baselines | Demo-only | `StoryChecker.run_all`, `checker/story_checker/metrics.py`, generated `examples/unity_chapter/metrics.json` | The draft compares SR/AQ/RA/SC on the compact seeded chapter. It does not reproduce industrial case studies or paper-scale timing tables. |
+| RQ3: pipeline utility against SR/AQ/RA baselines | Demo-only | `StoryChecker.run_all`, `checker/story_checker/metrics.py`, generated `examples/unity_chapter/metrics.json` | The implementation compares SR/AQ/RA/SC on the compact seeded chapter. It does not reproduce industrial case studies or paper-scale timing tables. |
 
 ## Contributions
 
@@ -86,10 +86,10 @@ This document maps the claims and artefacts in `docs/paper/main.tex` to the curr
 | Replay success rate | Partial | PlayMode test `ReplayHarnessReplaysTrace` | No automated replay-success metric over every generated trace yet. |
 | Trace length | Partial | Reports contain trace action counts | No aggregate median/min/max report yet. |
 | Analysis time | Missing | None | Verification script runs checks but does not currently write timing metrics. |
-| Peak memory | Missing | None | Not measured in this implementation draft. |
-| Adoption effort table | Documentation only | `docs/implementation-draft.md` | Effort estimates are not produced by code. |
+| Peak memory | Missing | None | Not measured in this implementation. |
+| Adoption effort table | Documentation only | `docs/implementation-notes.md` | Effort estimates are not produced by code. |
 | Industrial case studies | Out of scope | None | Requires private commercial data and adapters. |
-| Full open-source Unity prototype from paper table | Missing | Current Unity demo is smaller | The current implementation is a reviewable proof of concept, not the full paper-scale dataset. |
+| Full open-source Unity prototype from paper table | Missing | Current Unity demo is smaller | The current implementation is a compact replication artefact, not the full paper-scale dataset. |
 
 ## Verification Evidence
 
@@ -116,9 +116,9 @@ Expected core results:
 - checker SC mode: 52 configurations, 20 SC violations, 11 root causes
 - SC metrics: 6/6 seeded ground-truth entries detected
 
-## Review Backlog
+## Remaining Work
 
-These are the highest-value items if the implementation needs to move closer to the full paper:
+These items would move the public artefact closer to the full method described in the paper:
 
 1. Add automated Unity batch replay for every generated `V*_trace.json` and write replay success metrics.
 2. Implement bounded-rule translation into an extended NuSMV model instead of emitting a comment.

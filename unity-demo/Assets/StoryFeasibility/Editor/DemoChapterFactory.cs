@@ -7,7 +7,7 @@ using UnityEngine;
 namespace StoryFeasibilityEditor
 {
     /// <summary>
-    /// Builds the seeded demo chapter used by the implementation draft.
+    /// Builds the seeded demo chapter used by the software artefact.
     /// </summary>
     public static class DemoChapterFactory
     {

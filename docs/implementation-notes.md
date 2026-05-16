@@ -1,6 +1,6 @@
-# Implementation Draft: Unity Story Continuity Demo
+# Implementation Notes: Unity Story Continuity Demo
 
-This draft turns the paper architecture into a reviewable end-to-end prototype:
+This document describes how the paper architecture is represented in the Unity-based replication artefact:
 
 1. Unity-authored story metadata is represented as ScriptableObjects.
 2. `StoryGraphExtractor` editor tooling exports the metadata as an engine-independent JSON story graph.
@@ -22,7 +22,7 @@ checker/
     reporting.py                  JSON, Markdown, and trace outputs
     schema.py                     export contract validation
     smv.py                        NuSMV model generation and runner
-    metrics.py                    seeded-defect metrics
+    metrics.py                    seeded-defect evaluation metrics
   tests/
     test_demo.py                  regression checks for the demo slice
 
@@ -30,13 +30,13 @@ examples/unity_chapter/
   story_graph.json                exported demo graph
   rules.dsl                       continuity rules
   story_report.json               generated checker report
-  story_report.md                 generated human-readable report
+  story_report.md                 generated Markdown report
   story_model.smv                 generated NuSMV transition model
   nusmv_output.txt                NuSMV run output
   ground_truth.json               seeded-defect ground truth
   metrics.json                    detection, false-positive, and duplicate metrics
   schema_report.json              export-contract validation diagnostics
-  triage.csv                      QA-friendly violation export
+  triage.csv                      triage-oriented violation export
   traces/                         Unity-ready per-violation traces
 
 unity-demo/
@@ -156,7 +156,7 @@ The checker consumes the paper's engine-independent export shape:
 
 `initial_assets` is an implementation extension. It keeps the exported model self-contained while preserving the paper's asset-summary abstraction.
 
-## DSL MVP
+## DSL Subset
 
 Supported rule structure:
 
@@ -185,7 +185,7 @@ Supported predicates/effects:
 - `AddAsset`, `AddFlag`
 - `RemoveAsset`, `RemoveFlag`
 
-The current bounded rule implementation checks whether the requirement is reachable within `K` exported transitions from each trigger configuration. A stricter CTL `AF <= K` interpretation can be added in the symbolic backend.
+The current bounded-rule implementation checks whether the requirement is reachable within `K` exported transitions from each trigger configuration. A stricter CTL `AF <= K` interpretation would require the bounded-unrolling backend described in the paper.
 
 The demo now includes all four rules from the paper examples:
 
@@ -235,13 +235,13 @@ Implemented analysis modes:
 
 `--nusmv path-to-nusmv` can be supplied together with `--emit-smv` to run an installed NuSMV binary and capture its output.
 
-NuSMV 2.7.1 is installed locally under:
+NuSMV 2.7.1 can be installed locally under:
 
 ```text
 tools/NuSMV/NuSMV-2.7.1-win64/bin/NuSMV.exe
 ```
 
-The current generated NuSMV output shows:
+The generated NuSMV output for the included example shows:
 
 - P1 `BossPrereqsMet`: false, counterexample generated
 - P3 `NoFinalWhileHighlyWanted`: false, counterexample generated
@@ -334,12 +334,12 @@ Maintenance-sensitive areas:
 - new replay action types: update trace generation and `StoryReplayHarness`
 - new progression abstractions: add assets/flags to the export so analysis remains faithful
 
-## Review Alignment
+## Artefact Alignment
 
-For section-by-section mapping from the paper to this implementation draft, see:
+For a section-by-section mapping from the paper to this implementation, see:
 
 ```text
 docs/paper-traceability.md
 ```
 
-The traceability matrix also lists the current review backlog, including bounded NuSMV unrolling, automated replay of every generated trace, timing aggregation, and the distinction between this compact demo and the larger paper evaluation dataset.
+The traceability matrix also lists remaining implementation gaps, including bounded NuSMV unrolling, automated replay of every generated trace, timing aggregation, and the distinction between this compact demo and the larger paper evaluation dataset.

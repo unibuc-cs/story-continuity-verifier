@@ -37,7 +37,7 @@ The repository contains:
 
 - [Paper source](docs/paper/main.tex)
 - [Paper artefacts](docs/paper/README.md)
-- [Implementation notes](docs/implementation-draft.md)
+- [Implementation notes](docs/implementation-notes.md)
 - [Paper-to-code traceability matrix](docs/paper-traceability.md)
 - [Demo walkthrough](docs/demo-walkthrough.md)
 - [Verification commands](docs/ci-commands.md)

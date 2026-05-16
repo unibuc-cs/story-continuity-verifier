@@ -22,4 +22,4 @@ The paper source references `Flow.pdf` with:
 
 Because `main.tex` and `Flow.pdf` now live in the same folder, this figure path remains valid when compiling from `docs/paper`.
 
-The current repository does not include every external LaTeX support file referenced by `main.tex`, such as custom style inputs or bibliography files. The implementation review materials do not depend on compiling the paper locally.
+The current repository does not include every external LaTeX support file referenced by `main.tex`, such as custom style inputs or bibliography files. The software artefact and reproducibility materials do not depend on compiling the paper locally.

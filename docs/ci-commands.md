@@ -1,6 +1,6 @@
-# Verification Commands
+# Reproducibility Commands
 
-These commands reproduce the current validation state.
+These commands reproduce the validation state of the public artefact.
 
 ## One-Command Verification
 
@@ -8,7 +8,7 @@ These commands reproduce the current validation state.
 .\verify.ps1
 ```
 
-Useful switches:
+Optional switches:
 
 - `-SkipUnity`: run only Python, checker, metrics, and NuSMV validation.
 - `-SkipNuSMV`: run without the local NuSMV executable.
@@ -82,6 +82,6 @@ $logPath = Join-Path $projectPath 'Logs\batch-export-unity6000.log'
   -logFile $logPath
 ```
 
-## Known Environment Note
+## Environment Note
 
-Unity 2022.3.20f1 is installed, but its local `UnityPackageManager.exe` fails in this environment because it cannot find its internal `server/app.js`. Unity 6000.3.9f1 has a working Package Manager and was used for compile, batch export, and PlayMode tests.
+Unity 2022.3.20f1 is installed on the preparation machine, but its local `UnityPackageManager.exe` fails in this environment because it cannot find its internal `server/app.js`. Unity 6000.3.9f1 has a working Package Manager and was used for compile, batch export, and PlayMode tests.

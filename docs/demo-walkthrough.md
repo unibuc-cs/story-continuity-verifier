@@ -1,10 +1,10 @@
-# Demo Walkthrough
+# Reproducibility Walkthrough
 
-This walkthrough exercises the Unity story-continuity demo end to end.
+This walkthrough exercises the Unity story-continuity artefact end to end.
 
 ## 1. Generate Unity Content and Export the Graph
 
-Unity 6000.3.9f1 was used for validation on this machine. Unity 2022.3.20f1 is installed, but its local Package Manager binary is broken in this environment and fails before compilation.
+Unity 6000.3.9f1 was used for validation on the preparation machine. Unity 2022.3.20f1 is installed there as well, but its local Package Manager binary fails in that environment before compilation.
 
 ```powershell
 $projectPath = (Resolve-Path .\unity-demo).Path
@@ -30,7 +30,7 @@ The exported graph should produce the same checker behavior as `examples/unity_c
 
 ## 2. Run Checker, NuSMV, Metrics, and Triage Export
 
-NuSMV 2.7.1 is installed in this workspace:
+NuSMV 2.7.1 can be installed locally at:
 
 ```text
 tools/NuSMV/NuSMV-2.7.1-win64/bin/NuSMV.exe

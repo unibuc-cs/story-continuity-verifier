@@ -1,10 +1,10 @@
-# Story Feasibility Unity Demo
+# Story Feasibility Unity Artefact
 
-This folder is a minimal Unity project shell for the story-continuity prototype.
+This folder contains the Unity project used to instantiate the story-continuity prototype.
 
-Validated editor: Unity 6000.3.9f1.
+Validated editor version: Unity 6000.3.9f1.
 
-Use these editor menus:
+The demo chapter can be generated and exported through the following editor menus:
 
 1. `Tools > Story Feasibility > Create Demo Chapter Assets`
 2. Select the generated `UnityPrototypeChapter` asset.
