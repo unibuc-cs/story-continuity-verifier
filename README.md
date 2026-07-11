@@ -35,7 +35,7 @@ The repository contains:
 
 ## Documentation
 
-- A full preliminarily appendix at [Appendix](_appendix.pdf)
+- A full preliminarily appendix at [Appendix](_appendix_.pdf)
 
 - [Paper source](docs/paper/main.tex)
 - [Paper artefacts](docs/paper/README.md)
